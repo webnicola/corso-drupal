@@ -19,7 +19,7 @@
     public function process ($text, $langcode) {
       dump($text);
       $miastringa = $text ?? '';
-      $miastringa = str_replace('[hi]', '<strong>Ciao dal mio filtro</strong>', $text);
+      $miastringa = str_replace('[hi]', '<strong>Ciao dal mio filtro</strong>', $miastringa);
 
       return new FilterProcessResult($miastringa);
     }
