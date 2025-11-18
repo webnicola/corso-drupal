@@ -9,3 +9,18 @@
 ![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white)
 ![Composer](https://img.shields.io/badge/-Composer-885630?logo=composer&logoColor=white)
 ![Shell](https://img.shields.io/badge/-Shell-4EAA25?logo=gnu-bash&logoColor=white)
+
+Installare Drupal da terminale:
+
+`composer create-project "drupal/recommended-project:^11"`
+
+Installare un modlulo o un tema:
+
+`composer require drupal/nome_modulo`
+
+Cancellare la cache di Drupal:
+
+`drush cr`
+
+
+
