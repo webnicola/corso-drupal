@@ -1,0 +1,7 @@
+block.settings.md_info:
+  type: block_settings
+  label: 'info block'
+  mapping:
+    example:
+      type: string
+      label: Example

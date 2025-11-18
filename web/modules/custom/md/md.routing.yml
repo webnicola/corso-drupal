@@ -1,0 +1,15 @@
+md.example:
+  path: '/md/example'
+  defaults:
+    _title: 'Example'
+    _form: 'Drupal\md\Form\ExampleForm'
+  requirements:
+    _permission: 'access content'
+
+md.example2:
+  path: '/md/example2'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\md\Controller\MdController'
+  requirements:
+    _permission: 'access content'

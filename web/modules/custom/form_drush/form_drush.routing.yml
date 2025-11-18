@@ -1,0 +1,7 @@
+form_drush.form_drush:
+  path: '/form-drush/form-drush'
+  defaults:
+    _title: 'Form Drush'
+    _form: 'Drupal\form_drush\Form\FormDrush'
+  requirements:
+    _permission: 'access content'

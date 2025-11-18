@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Modulo da drush module.
+ */
+
+/**
+ * Implements hook_hook_info().
+ */
+function md_hook_info(): array {
+  $hooks['token_info'] = [
+    'group' => 'tokens',
+  ];
+  $hooks['tokens'] = [
+    'group' => 'tokens',
+  ];
+  return $hooks;
+}
