@@ -16,10 +16,32 @@ use Drupal\Core\Block\BlockBase;
  class MioBlocco extends BlockBase {
 
   public function build () {
-    $now = \Drupal::service('date.formatter')->format(time(), 'custom', 'd/m/Y H:i');
-    // dump($now);
+    $data = \Drupal::service('date.formatter')->format(time(), 'custom', 'd/m/Y H:i');
+
+    $payload = [
+      'title' => 'Lista insegnamenti',
+      'items' => [
+        [
+          'des' => 'Insegnamento 1',
+          'peso' => '6'
+        ],
+        [
+          'des' => 'Insegnamento 2',
+          'peso' => '7'
+        ],
+        [
+          'des' => 'Insegnamento 3',
+          'peso' => '9'
+        ],
+      ],
+    ];
+
+    dump($payload);
+
     return [
-      '#markup' => "<h2> mio blocco custom adesso sono $now </h2>",
+      '#theme' => 'miomodulo_mioblocco',
+      '#now' => $data,
+      '#payload' => $payload,
     ];
   }
 
